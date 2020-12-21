@@ -120,6 +120,8 @@ while true; do
     echo Port $port refreshed on $(date). \
       This port will expire on $(date --date="$expires_at")
 
+    echo "$port" > /opt/piavpn-manual/port
+
     # sleep 15 minutes
     sleep 900
 done
